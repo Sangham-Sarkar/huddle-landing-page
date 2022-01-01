@@ -1,0 +1,117 @@
+
+.main-background{
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+body{
+    display: flex;
+    align-items: flex-start;
+    background-color: hsl(257, 40%, 49%);
+}
+.illustration{
+    left: 6%;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+}
+
+.context{
+    top: 27%;
+    right: 13%;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.registration-button{
+    z-index: 2;
+    position:absolute;
+    color: hsl(257, 40%, 49%);
+    top:62%;
+    right: 24%;
+    width: 150px;
+    height: 50px;
+    border:hidden;
+    outline: hidden;
+    outline-style: round;
+    border-radius: 25px;  
+}
+
+.registration-button:hover{
+    background-color: rgb(240, 104, 240);
+    color: white;
+    animation-name: hoveranimation;
+    animation-duration: 3s;
+}
+
+.about-context{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    text-size-adjust: 10px;
+    top:45%;
+    right: 1.5%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+
+}
+
+.logos{
+    top: 8%;
+    left: 6%;
+    z-index: 2;
+    position: absolute;
+}
+
+.facebook-link{
+    z-index: 3;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: -15%;
+    right:6%;
+    border-style: round;
+    border-radius: 50%;    
+}
+
+.facebook-link:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+.twitter-link{
+    z-index: 3;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: -15%;
+    right:10%;
+    border-style: round;
+    border-radius: 25%;  
+}
+
+.twitter-link:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+.instagram-link{
+    z-index: 3;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: -15%;
+    right:14%;
+    border-style: round;
+    border-radius: 25%;  
+}
+
+.instagram-link:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+@keyframes hoveranimation {
+    from {background-color: white;}
+    to {background-color: rgb(240, 104, 240);}
+}
