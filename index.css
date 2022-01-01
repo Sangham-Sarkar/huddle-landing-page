@@ -38,13 +38,14 @@ body{
     outline: hidden;
     outline-style: round;
     border-radius: 25px;  
+    box-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .registration-button:hover{
     background-color: rgb(240, 104, 240);
     color: white;
     animation-name: hoveranimation;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 
 .about-context{
@@ -71,7 +72,7 @@ body{
     position: absolute;
     width: 35px;
     height: 35px;
-    bottom: -15%;
+    bottom: -22%;
     right:6%;
     border-style: round;
     border-radius: 50%;    
@@ -79,6 +80,8 @@ body{
 
 .facebook-link:hover{
     background-color: hsl(300, 69%, 71%);
+    animation-name: slowanimation;
+    animation-duration: 2s;
 }
 
 .twitter-link{
@@ -86,7 +89,7 @@ body{
     position: absolute;
     width: 35px;
     height: 35px;
-    bottom: -15%;
+    bottom: -22%;
     right:10%;
     border-style: round;
     border-radius: 25%;  
@@ -94,6 +97,8 @@ body{
 
 .twitter-link:hover{
     background-color: hsl(300, 69%, 71%);
+    animation-name: slowanimation;
+    animation-duration: 2s;
 }
 
 .instagram-link{
@@ -101,7 +106,7 @@ body{
     position: absolute;
     width: 35px;
     height: 35px;
-    bottom: -15%;
+    bottom: -22%;
     right:14%;
     border-style: round;
     border-radius: 25%;  
@@ -109,9 +114,16 @@ body{
 
 .instagram-link:hover{
     background-color: hsl(300, 69%, 71%);
+    animation-name: slowanimation;
+    animation-duration: 2s;
 }
 
 @keyframes hoveranimation {
     from {background-color: white;}
+    to {background-color: rgb(240, 104, 240);}
+}
+
+@keyframes slowanimation {
+    from {background-color: hsl(257, 40%, 49%) ;}
     to {background-color: rgb(240, 104, 240);}
 }
