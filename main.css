@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
+@media screen and (max-width:400px) {
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
 body{
+    height: 100vh;
     background-image: url("./images/bg-desktop.svg");
     background-color: hsl(257, 40%, 49%);
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 3em;
 }
 
 main{
+    margin-top: 3em;
     display: flex;
     align-items: center;
     column-gap: 2em;
@@ -13,12 +28,19 @@ main{
 
 h1 {
     font-family: 'Poppins', sans-serif;
+    font-size: 3vw;
+    
   }
 
 h2{
     font-size: medium;
     font-family: 'Poppins', thin;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+    margin-top:-0.5em;
+    margin-bottom: 1em;
 }  
+
 
 .main-background{
     width: 100%;
@@ -26,19 +48,18 @@ h2{
 }
 
 .illustration{
-    position: relative;
+    width: 50%;
+
 }
 
 .info{
     display: flex;
     flex-direction: column;
     color: white;
-
-    margin-bottom: 2em;
+    justify-content: center;
     
 }
 .registration-button{
-    position:relative;
     color: hsl(257, 40%, 49%);
     width: 150px;
     height: 50px;
@@ -56,43 +77,13 @@ h2{
     animation-duration: 1s;
 }
 
-.facebook-link{
-    position: relative;
-    width: 35px;
-    height: 35px;
-    border-style: round;
-    border-radius: 50%;    
+.icon{
+    border-radius: 50%;
+    border: solid 2px white; 
+    padding: 5px;
 }
 
-.facebook-link:hover{
-    background-color: hsl(300, 69%, 71%);
-    animation-name: slowanimation;
-    animation-duration: 2s;
-}
-
-.twitter-link{
-    position: relative;
-    width: 35px;
-    height: 35px;
-    border-style: round;
-    border-radius: 25%;  
-}
-
-.twitter-link:hover{
-    background-color: hsl(300, 69%, 71%);
-    animation-name: slowanimation;
-    animation-duration: 2s;
-}
-
-.instagram-link{
-    position: relative;
-    width: 35px;
-    height: 35px;
-    border-style: round;
-    border-radius: 25%;  
-}
-
-.instagram-link:hover{
+.icon:hover{
     background-color: hsl(300, 69%, 71%);
     animation-name: slowanimation;
     animation-duration: 2s;
@@ -102,6 +93,9 @@ footer{
     display: flex;
     justify-content: flex-end;
     column-gap: 1em;
+}
+.logo{
+    margin-top: -1.5em;
 }
 
 @keyframes hoveranimation {
