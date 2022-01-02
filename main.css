@@ -1,37 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    background-image: url("./images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+h2{
+    font-size: medium;
+    font-family: 'Poppins', thin;
+}  
 
 .main-background{
     width: 100%;
     height: auto;
-    z-index: 0;
 }
-body{
-    display: flex;
-    align-items: flex-start;
-    background-color: hsl(257, 40%, 49%);
-}
+
 .illustration{
-    left: 6%;
-    position: absolute;
-    z-index: 1;
-    top: 25%;
+    position: relative;
 }
 
-.context{
-    top: 27%;
-    right: 13%;
-    position: absolute;
-    z-index: 2;
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
+.info{
+    display: flex;
+    flex-direction: column;
     color: white;
-}
 
+    margin-bottom: 2em;
+    
+}
 .registration-button{
-    z-index: 2;
-    position:absolute;
+    position:relative;
     color: hsl(257, 40%, 49%);
-    top:62%;
-    right: 24%;
     width: 150px;
     height: 50px;
     border:hidden;
@@ -48,32 +56,10 @@ body{
     animation-duration: 1s;
 }
 
-.about-context{
-    z-index: 2;
-    position: absolute;
-    color: white;
-    text-size-adjust: 10px;
-    top:45%;
-    right: 1.5%;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 22px;
-
-}
-
-.logos{
-    top: 8%;
-    left: 6%;
-    z-index: 2;
-    position: absolute;
-}
-
 .facebook-link{
-    z-index: 3;
-    position: absolute;
+    position: relative;
     width: 35px;
     height: 35px;
-    bottom: -22%;
-    right:6%;
     border-style: round;
     border-radius: 50%;    
 }
@@ -85,12 +71,9 @@ body{
 }
 
 .twitter-link{
-    z-index: 3;
-    position: absolute;
+    position: relative;
     width: 35px;
     height: 35px;
-    bottom: -22%;
-    right:10%;
     border-style: round;
     border-radius: 25%;  
 }
@@ -102,12 +85,9 @@ body{
 }
 
 .instagram-link{
-    z-index: 3;
-    position: absolute;
+    position: relative;
     width: 35px;
     height: 35px;
-    bottom: -22%;
-    right:14%;
     border-style: round;
     border-radius: 25%;  
 }
@@ -116,6 +96,12 @@ body{
     background-color: hsl(300, 69%, 71%);
     animation-name: slowanimation;
     animation-duration: 2s;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1em;
 }
 
 @keyframes hoveranimation {
